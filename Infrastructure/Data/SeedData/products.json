@@ -1,0 +1,146 @@
+[
+  {
+    "Name": "Levi's Stylish Jeans",
+    "Description": "Experience comfort and style with these Levi's jeans. Crafted with care for your everyday adventures.",
+    "Price": 89.99,
+    "PictureUrl": "images/products/sb-ang1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Calvin Klein Denim Jacket",
+    "Description": "Make a statement with this iconic Calvin Klein denim jacket. A perfect blend of fashion and functionality.",
+    "Price": 120.00,
+    "PictureUrl": "images/products/sb-ang2.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Zara Summer Dress",
+    "Description": "Step into summer with grace wearing this Zara dress. Light, airy, and designed to keep you cool.",
+    "Price": 59.99,
+    "PictureUrl": "images/products/sb-core1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Tommy Hilfiger Polo Shirt",
+    "Description": "Elevate your casual look with this Tommy Hilfiger polo shirt. Classic design with a modern twist.",
+    "Price": 65.00,
+    "PictureUrl": "images/products/sb-core2.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "React Urban Sneakers",
+    "Description": "Stay comfortable and trendy with these React urban sneakers. Perfect for your daily adventures.",
+    "Price": 89.99,
+    "PictureUrl": "images/products/sb-react1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Typescript Graphic T-shirt",
+    "Description": "Express your love for coding with this stylish Typescript graphic t-shirt. A must-have for tech enthusiasts.",
+    "Price": 25.99,
+    "PictureUrl": "images/products/sb-ts1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "CK Classic Cap",
+    "Description": "Add a touch of sophistication to your outfit with this Calvin Klein classic cap. A timeless accessory.",
+    "Price": 29.99,
+    "PictureUrl": "images/products/hat-core1.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "React Woolen Beanie",
+    "Description": "Stay warm and stylish with this cozy React woolen beanie. Perfect for chilly days.",
+    "Price": 18.50,
+    "PictureUrl": "images/products/hat-react1.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Purple React Woolen Hat",
+    "Description": "Add a pop of color to your winter look with this purple React woolen hat. Stay trendy and snug.",
+    "Price": 22.00,
+    "PictureUrl": "images/products/hat-react2.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "VS Code Touchscreen Gloves",
+    "Description": "Stay connected even in cold weather with these touchscreen-compatible VS Code gloves. Keep coding on the go!",
+    "Price": 34.99,
+    "PictureUrl": "images/products/glove-code1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Green Code Fingerless Gloves",
+    "Description": "Stay productive and warm with these green Code fingerless gloves. Ideal for typing and coding.",
+    "Price": 29.50,
+    "PictureUrl": "images/products/glove-code2.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "React Patterned Gloves",
+    "Description": "Enhance your winter style with these React patterned gloves. Stay cozy and chic.",
+    "Price": 26.00,
+    "PictureUrl": "images/products/glove-react1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Green React Touch Gloves",
+    "Description": "Stay connected and stylish with these green React touch gloves. Perfect for the modern tech-savvy individual.",
+    "Price": 28.99,
+    "PictureUrl": "images/products/glove-react2.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Redis Adventure Boots",
+    "Description": "Embark on adventures in style with these Redis adventure boots. Durable, comfortable, and ready for anything.",
+    "Price": 179.99,
+    "PictureUrl": "images/products/boot-redis1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Core Urban Boots",
+    "Description": "Navigate the urban jungle with confidence wearing these Core urban boots. A perfect blend of style and functionality.",
+    "Price": 149.50,
+    "PictureUrl": "images/products/boot-core2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Core Purple Boots",
+    "Description": "Make a statement with these Core purple boots. Stand out from the crowd with this unique color.",
+    "Price": 159.99,
+    "PictureUrl": "images/products/boot-core1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Angular Purple Adventure Boots",
+    "Description": "Gear up for outdoor explorations with these Angular purple adventure boots. Comfortable and stylish.",
+    "Price": 129.00,
+    "PictureUrl": "images/products/boot-ang2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Angular Blue Boots",
+    "Description": "Step out in style with these Angular blue boots. Perfect for urban adventures and casual outings.",
+    "Price": 149.99,
+    "PictureUrl": "images/products/boot-ang1.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  }
+]

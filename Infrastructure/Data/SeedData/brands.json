@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "Levi's"
+  },
+  {
+    "Id": 2,
+    "Name": "Calvin Klein"
+  },
+  {
+    "Id": 3,
+    "Name": "Zara"
+  },
+  {
+    "Id": 4,
+    "Name": "Tommy Hilfiger"
+  },
+  {
+    "Id": 5,
+    "Name": "H&M"
+  },
+  {
+    "Id": 6,
+    "Name": "GAP"
+  }
+]

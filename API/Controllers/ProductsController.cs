@@ -1,14 +1,14 @@
+using API.Controllers.Dto;
+using API.Ext;
 using Core.Entities;
 using Core.Interfaces;
-using Infrastructue.Data;
+using Core.Specification;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+  
+    public class ProductsController : BaseApiController
     {
         private readonly IGenericRepository<Product> ProductsRepo;
         private readonly IGenericRepository<ProductBrand> ProductBrandRepo;
@@ -22,17 +22,38 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Product>>> GetProducts()
+        public async Task<ActionResult<List<Product_To_Return>>> GetProducts(
+            [FromQuery]ProductSpecificationParams productParams)
         {
-            var products = await ProductsRepo.ListAllAsync();
+            var spec = new Products_Types_Brands_Speci(productParams);
+            var products = await ProductsRepo.ListAsync(spec);
 
-            return Ok(products);
+            return products.Select(product => new Product_To_Return{
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                PictureUrl = product.PictureUrl,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name
+            }).ToList();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Product>> GetProduct(int id)
+        public async Task<ActionResult<Product_To_Return>> GetProduct(int id)
         {
-            return await ProductsRepo.GetByIdAsync(id);
+            var spec = new Products_Types_Brands_Speci(id);
+         var product =     await ProductsRepo.GetEntityWithSpec(spec);
+            // return Porductdto
+            return new Product_To_Return{
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                Price = product.Price,
+                PictureUrl = product.PictureUrl,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name
+            };
      
         }
 
@@ -46,6 +67,16 @@ namespace API.Controllers
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductsTypes()
         {
             return Ok(await ProductTypeRepo.ListAllAsync());         
+        }
+    }
+
+    internal class ApiResponse
+    {
+        private int v;
+
+        public ApiResponse(int v)
+        {
+            this.v = v;
         }
     }
 }
